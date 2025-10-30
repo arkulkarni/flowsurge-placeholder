@@ -5,20 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>FlowSurge.ai</title>
-  <meta name="description" content="FlowSurge.ai is building advanced workflow automation technology. Currently in private development and early pilots." />
-  <meta name="robots" content="index,follow" />
+  <meta name="description" content="FlowSurge.ai is building advanced workflow automation technology for healthcare. Currently in private development and early pilots." />
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="FlowSurge.ai" />
-  <meta property="og:description" content="Private development. Early pilots." />
+  <meta property="og:description" content="Stealth mode. Early pilots." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://flowsurge.ai" />
-
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23000000'/%3E%3Cpath d='M18 34c6 8 14 10 28 6' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
 
   <style>
     :root { color-scheme: light dark; }
@@ -27,39 +22,74 @@
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
       display: grid;
       place-items: center;
-      background: canvas; color: canvastext;
+      background: canvas;
+      color: canvastext;
     }
     .wrap {
-      max-width: 640px;
+      max-width: 780px;
       padding: 24px;
       text-align: center;
-      line-height: 1.6;
+      line-height: 1.55;
     }
-    h1 { font-size: clamp(26px, 4vw, 40px); margin: 0 0 8px; }
-    p.lead { font-size: clamp(16px, 2.2vw, 18px); margin: 0 0 20px; opacity: .9; }
-    .badge { display: inline-block; padding: 6px 10px; border: 1px solid currentColor; border-radius: 999px; font-size: 13px; opacity: .8; }
+    h1 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+    p {
+      margin: 0 0 18px;
+      font-size: clamp(16px, 2vw, 18px);
+      opacity: 0.9;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 16px;
+      opacity: .8;
+    }
     .contact {
-      margin-top: 22px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+      margin-top: 26px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     .btn {
-      border: 1px solid currentColor; border-radius: 10px; padding: 10px 14px;
-      text-decoration: none; color: inherit;
+      border: 1px solid currentColor;
+      border-radius: 10px;
+      padding: 10px 14px;
+      text-decoration: none;
+      color: inherit;
+      font-size: 15px;
     }
-    footer { margin-top: 28px; font-size: 12px; opacity: .7; }
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      opacity: .6;
+    }
   </style>
 </head>
 <body>
-  <main class="wrap" aria-label="FlowSurge">
-    <div class="badge">Private development</div>
+  <main class="wrap">
+    <div class="badge">Stealth mode</div>
+
     <h1>FlowSurge.ai</h1>
-    <p class="lead">We are building advanced workflow automation technology for the healthcare vertical.</p>
-    <p class="lead">Currently operating in private development and early pilots.</p>
+
+    <p>Building advanced workflow automation technology for healthcare.</p>
+    <p>Currently in private development and early pilots.</p>
+
+    <div class="contact">
+      <a class="btn" href="mailto:amit@flowsurge.ai">Contact</a>
+      <a class="btn" href="https://www.linkedin.com/in/arkulkarni/" rel="noopener">LinkedIn</a>
+    </div>
 
     <footer>© <span id="y"></span> FlowSurge.ai</footer>
   </main>
 
   <script>
-    // set current year without any external JS
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
